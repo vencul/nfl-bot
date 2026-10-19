@@ -41,4 +41,6 @@ async def rate(ctx, *, pasted_text):
     await ctx.send(response)
 
 # PASTE YOUR SECRET TOKEN INSIDE THE QUOTES BELOW:
-bot.run("MTU2MTY5MDM5ODczMTI3MjM3Mg.GJo-dJ.fjW9hIt-6RvdT5SWO-ofhlu5bX_CUEJWlte62s")
+import os
+bot.run(os.getenv("DISCORD_TOKEN"))
+
